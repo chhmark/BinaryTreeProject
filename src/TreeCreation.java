@@ -28,12 +28,10 @@ public class TreeCreation
     
     public static Node createTree(String word)
     {
-        int idx = 1;
         Node root = new Node(word.substring(0, 1), 0);
-        while(idx < word.length())
+        for(int idx = 1; idx < word.length(); idx++)
         {
             root.insert(word.substring(idx, idx + 1));
-            idx++;
         }
         return root;
     }
