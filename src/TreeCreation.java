@@ -17,7 +17,8 @@ public class TreeCreation
         
         while(input.hasNextLine())
         {
-            Node root = createTree(input.nextLine());
+            Node root = createTree(input.next());
+            System.out.println(root);
             System.out.println(onlyLeftChild(root));
             System.out.println(onlyRightChild(root));
             System.out.println(preOrder(root));
